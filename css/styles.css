@@ -1,6 +1,27 @@
+/**
+ * TABLE OF CONTENTS:
+ *
+ *  0. GLOBAL
+ *  1. HELPERS
+ *  2. PROFILE
+ *  3. PROJECTS
+ *  4. FOOTER
+ *  5. RESPONSIVE
+ *    - 5.1. LARGE DEVICES, WIDE SCREENS
+ *    - 5.2. MEDIUM DEVICES, DESKTOPS
+ *    - 5.3. SMALL DEVICES, TABLETS LANDSCAPE
+ *    - 5.4. SMALL DEVICES, TABLETS PORTRAIT
+ *    - 5.5. EXTRA SMALL DEVICES, PHONES
+ *    - 5.6. CUSTOM, IPHONE RETINA
+ */
+
+/* ==========================================================================
+   0. GLOBAL
+   ========================================================================== */
+
 body {
   padding: 20px 0;
-  font: 300 1rem "Lato", sans-serif;
+  font: 300 14px "Lato", sans-serif;
   color: #666756;
   background: #fff;
 }
@@ -9,32 +30,39 @@ hr {
   border-top: 4px solid #bbb;
 }
 
+/* ==========================================================================
+   1. HELPERS
+   ========================================================================== */
+
 .text-thin {
   font-weight: 100;
 }
 
-.debug {
-  border: 1px solid blue;
-}
+/* ==========================================================================
+   2. PROFILE
+   ========================================================================== */
 
 .profile {
   margin-top: 10px;
-  text-transform: uppercase;
   text-align: right;
+  text-transform: uppercase;
 }
 
 .profile-name {
   margin: 0;
-  font-size: 60px;
+  font-size: 4.286em;
 }
 
 .profile-job {
   margin: 5px;
-  font-size: 20px;
+  font-size: 1.429em;
 }
 
-h2 {
-  font-weight: bold;
+/* ==========================================================================
+   3. PROJECTS
+   ========================================================================== */
+
+.project-featured {
   color: #bbb;
 }
 
@@ -44,32 +72,92 @@ h2 {
 
 .project-title {
   color: #666756;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
 
 .project-link {
+  font-size: 1.143em;
   color: #666756;
-  font-size: 16px;
 }
 
+/* ==========================================================================
+   4. FOOTER
+   ========================================================================== */
+
 .footer {
-  text-align: center;
-  font-size: 16px;
   margin-top: 50px;
+  font-size: 1.143em;
+  font-weight: 400;
+  text-align: center;
 }
 
 .love {
   position: relative;
   top: 2px;
   display: inline-block;
-  font-size: 20px;
+  font-size: 1.429em;
   color: #e74c3c;
-  transform: scale(.9);
-  animation: love .5s infinite linear alternate-reverse;
+  transform: scale(0.9);
+  animation: love 0.5s infinite linear alternate-reverse;
 }
 
 @keyframes love {
   to {
     transform: scale(1.2);
+  }
+}
+
+/* ==========================================================================
+   5. RESPONSIVE
+   ========================================================================== */
+
+/* 5.1 LARGE DEVICES, WIDE SCREENS
+   ========================================================================== */
+
+/*@media only screen and (max-width: 1200px) {}*/
+
+/* 5.2 MEDIUM DEVICES, DESKTOPS
+   ========================================================================== */
+
+@media only screen and (max-width: 992px) {
+  .profile {
+    text-align: center;
+  }
+}
+
+/* 5.3 SMALL DEVICES, TABLETS LANDSCAPE
+   ========================================================================== */
+
+@media only screen and (max-width: 768px) {
+  .profile {
+    text-align: center;
+  }
+}
+
+/* 5.4 SMALL DEVICES, TABLETS PORTRAIT
+   ========================================================================== */
+
+@media only screen and (max-width: 600px) {
+  .profile {
+    text-align: center;
+  }
+}
+
+/* 5.5 EXTRA SMALL DEVICES, PHONES
+   ========================================================================== */
+
+@media only screen and (max-width: 480px) {
+  .profile {
+    text-align: center;
+  }
+}
+
+/* 5.6 CUSTOM, IPHONE RETINA
+   ========================================================================== */
+
+@media only screen and (max-width: 360px) {
+  .profile {
+    text-align: center;
   }
 }
