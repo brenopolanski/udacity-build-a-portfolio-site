@@ -124,6 +124,12 @@ hr {
   .profile {
     text-align: center;
   }
+
+  .profile-avatar {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 /* 5.3 SMALL DEVICES, TABLETS LANDSCAPE
@@ -132,6 +138,12 @@ hr {
 @media only screen and (max-width: 768px) {
   .profile {
     text-align: center;
+  }
+
+  .profile-avatar {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -142,6 +154,16 @@ hr {
   .profile {
     text-align: center;
   }
+
+  .profile-avatar {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .profile-name {
+    font-size: 2.857em;
+  }
 }
 
 /* 5.5 EXTRA SMALL DEVICES, PHONES
@@ -151,6 +173,16 @@ hr {
   .profile {
     text-align: center;
   }
+
+  .profile-avatar {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .profile-name {
+    font-size: 2.857em;
+  }
 }
 
 /* 5.6 CUSTOM, IPHONE RETINA
@@ -159,5 +191,15 @@ hr {
 @media only screen and (max-width: 360px) {
   .profile {
     text-align: center;
+  }
+
+  .profile-avatar {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .profile-name {
+    font-size: 2.857em;
   }
 }

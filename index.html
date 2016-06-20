@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <!-- Meta -->
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Breno Polanski - Front End Software Engineer">
@@ -31,21 +31,23 @@
 </head>
 <body>
   <div class="container">
-    <header>
-      <div class="row">
-        <div class="col-md-6 hidden-xs hidden-sm">
-          <img src="img/brenopolanski.jpg" class="img-circle img-responsive" alt="Breno Polanski Picture">
-        </div>
-        <div class="profile col-md-6">
-          <h1 class="profile-name text-thin">Breno Polanski</h1>
-          <h3 class="profile-job">Front End Software Engineer</h3>
-        </div>
+    <header class="row">
+      <div class="col-md-6">
+        <img src="img/brenopolanski.jpg" class="profile-avatar img-circle img-responsive" alt="Breno Polanski Picture">
       </div>
-
-      <hr>
-    </header>
+      <div class="profile col-md-6">
+        <h1 class="profile-name text-thin">Breno Polanski</h1>
+        <h3 class="profile-job">Front End Software Engineer</h3>
+      </div>
+    </header> <!-- /.row -->
 
     <div class="row">
+      <div class="col-md-12">
+        <hr>
+      </div>
+    </div> <!-- /.row -->
+
+    <section class="row">
       <div class="col-md-12">
         <div class="carousel slide" id="carousel-portfolio" data-ride="carousel">
           <ol class="carousel-indicators">
@@ -56,17 +58,17 @@
           <div class="carousel-inner" role="listbox">
             <div class="item active">
               <a href="https://github.com/react-beer" target="_blank">
-                <img src="img/main-project-1.png" class="img-responsive" alt="React Beer">
+                <img src="img/main-project-1-4x.png" srcset="img/main-project-1-1x.png 342w, img/main-project-1-2x.png 683w, img/main-project-1-3x.png 1024w, img/main-project-1-4x.png 1366w" class="img-responsive" alt="React Beer">
               </a>
             </div>
             <div class="item">
               <a href="https://github.com/coffee-club" target="_blank">
-                <img src="img/main-project-2.png" class="img-responsive" alt="The Coffee Club">
+                <img src="img/main-project-2-4x.png" srcset="img/main-project-2-1x.png 342w, img/main-project-2-2x.png 683w, img/main-project-2-3x.png 1024w, img/main-project-2-4x.png 1366w" class="img-responsive" alt="The Coffee Club">
               </a>
             </div>
             <div class="item">
               <a href="http://community.meteorite.bi/" target="_blank">
-                <img src="img/main-project-3.png" class="img-responsive" alt="Saiku Community">
+                <img src="img/main-project-3-4x.png" srcset="img/main-project-3-1x.png 342w, img/main-project-3-2x.png 683w, img/main-project-3-3x.png 1024w, img/main-project-3-4x.png 1366w" class="img-responsive" alt="Saiku Community">
               </a>
             </div>
           </div>
@@ -78,51 +80,49 @@
             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a>
-        </div>
-      </div>
-    </div>
+        </div> <!-- /.carousel -->
+      </div> <!-- /.col -->
+    </section> <!-- /.row -->
 
-    <section>
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="project-featured">Featured Work</h2>
-        </div>
+    <main class="row">
+      <div class="col-md-12">
+        <h2 class="project-featured">Featured Work</h2>
       </div>
-      <div class="row">
-        <div class="col-md-4">
-          <a href="http://brenopolanski.com/game-salve-chiquinha/" class="thumbnail" target="_blank">
-            <img src="img/thumb-project-1.png" class="img-responsive" alt="Game Salve Chiquinha">
-          </a>
-          <div class="project">
-            <h3 class="project-title">Game Salve Chiquinha</h3>
-            <a href="https://github.com/brenopolanski/game-salve-chiquinha" class="project-link" target="_blank">https://github.com/brenopolanski/game-salve-chiquinha</a>
-          </div>
+      <article class="col-md-4">
+        <a href="http://brenopolanski.com/game-salve-chiquinha/" class="thumbnail" target="_blank">
+          <img src="img/thumb-project-1-4x.png" srcset="img/thumb-project-1-1x.png 342w, img/thumb-project-1-2x.png 683w, img/thumb-project-1-3x.png 1024w, img/thumb-project-1-4x.png 1366w" class="img-responsive" alt="Game Salve Chiquinha">
+        </a>
+        <div class="project">
+          <h3 class="project-title">Game Salve Chiquinha</h3>
+          <a href="https://github.com/brenopolanski/game-salve-chiquinha" class="project-link" target="_blank">https://github.com/brenopolanski/game-salve-chiquinha</a>
         </div>
-        <div class="col-md-4">
-          <a href="http://brenopolanski.com/game-flyx/" class="thumbnail" target="_blank">
-            <img src="img/thumb-project-2.png" class="img-responsive" alt="Game FlyX">
-          </a>
-          <div class="project">
-            <h3 class="project-title">Game FlyX</h3>
-            <a href="https://github.com/brenopolanski/game-flyx" class="project-link" target="_blank">https://github.com/brenopolanski/game-flyx</a>
-          </div>
+      </article>
+      <article class="col-md-4">
+        <a href="http://brenopolanski.com/game-flyx/" class="thumbnail" target="_blank">
+          <img src="img/thumb-project-2-4x.png" srcset="img/thumb-project-2-1x.png 342w, img/thumb-project-2-2x.png 683w, img/thumb-project-2-3x.png 1024w, img/thumb-project-2-4x.png 1366w" class="img-responsive" alt="Game FlyX">
+        </a>
+        <div class="project">
+          <h3 class="project-title">Game FlyX</h3>
+          <a href="https://github.com/brenopolanski/game-flyx" class="project-link" target="_blank">https://github.com/brenopolanski/game-flyx</a>
         </div>
-        <div class="col-md-4">
-          <a href="https://github.com/OSBI/saiku" class="thumbnail" target="_blank">
-            <img src="img/thumb-project-3.png" class="img-responsive" alt="Saiku Analytics">
-          </a>
-          <div class="project">
-            <h2 class="project-title">Saiku Analytics</h2>
-            <a href="https://github.com/OSBI/saiku" class="project-link" target="_blank">https://github.com/OSBI/saiku</a>
-          </div>
+      </article>
+      <article class="col-md-4">
+        <a href="https://github.com/OSBI/saiku" class="thumbnail" target="_blank">
+          <img src="img/thumb-project-3-4x.png" srcset="img/thumb-project-3-1x.png 342w, img/thumb-project-3-2x.png 683w, img/thumb-project-3-3x.png 1024w, img/thumb-project-3-4x.png 1366w" class="img-responsive" alt="Saiku Analytics">
+        </a>
+        <div class="project">
+          <h3 class="project-title">Saiku Analytics</h3>
+          <a href="https://github.com/OSBI/saiku" class="project-link" target="_blank">https://github.com/OSBI/saiku</a>
         </div>
-      </div>
-    </section>
+      </article>
+    </main> <!-- /.row -->
 
-    <footer class="footer">
-      <p>Made with <span class="love">♥</span> by <a href="https://github.com/brenopolanski" target="_blank">Breno Polanski</a></p>
-    </footer>
-  </div>
+    <footer class="row">
+      <div class="footer col-md-12">
+        <p>Made with <span class="love">♥</span> by <a href="https://github.com/brenopolanski" target="_blank">Breno Polanski</a></p>
+      </div>
+    </footer> <!-- /.row -->
+  </div> <!-- /.container -->
 
   <!-- JS -->
   <script src="js/jquery.min.js"></script>
